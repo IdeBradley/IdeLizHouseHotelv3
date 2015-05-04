@@ -25,22 +25,23 @@
         <Rectangle Fill="Lavender" Grid.Row="2" />
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="130,17,0,27.667">
             <TextBlock x:Name="PageTitle" Text="Happy Houses" Margin="9,-7,0.333,0" Height="55" FontSize="36" Foreground="Purple"  />
+            <Image HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="0" VerticalAlignment="Top" Source="happyhouse.png"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <ScrollViewer x:Name="ContentGrid" Grid.Row="1" VerticalScrollBarVisibility="Visible">
             <Grid Name="grid1">
-                <TextBlock Height="30" HorizontalAlignment="Left" Margin="20,48,0,0" Name="textBlock1" Text="Selected Property" VerticalAlignment="Top" />
-                <TextBlock Height="71" HorizontalAlignment="Left" Margin="100,23,0,0" Name="ChosenProperty" Text="POO1" VerticalAlignment="Top" Width="235">
-                </TextBlock>
+                <TextBlock Height="30" HorizontalAlignment="Left" Margin="20,48,0,0" Name="textBlock1" Text="Property" VerticalAlignment="Top" />
+                <TextBlock Height="71" HorizontalAlignment="Left" Margin="100,23,0,0" Name="ChosenProperty" Text="POO1" VerticalAlignment="Top" Width="235" FontSize="36"/>
+
                 <TextBlock Height="30" HorizontalAlignment="Left" Margin="20,124,0,0" Name="textBlock2" Text="E-mail" VerticalAlignment="Top" />
                 <TextBox Height="70" HorizontalAlignment="Left" Margin="100,99,0,0" Name="emailTextBox" Text="whoever@gmail.com" VerticalAlignment="Top" Width="235" InputScope="EmailSmtpAddress">
                 </TextBox>
                 <CheckBox Content="I accept terms and conditions" Height="72" HorizontalAlignment="Center" Margin="0,213,0,0" Name="termsCheckBox" VerticalAlignment="Top" HorizontalContentAlignment="Center" IsChecked="True" />
-                <Button Content="Register" Height="72" HorizontalAlignment="Center" Margin="0,323,0,0" Name="registerButton" VerticalAlignment="Top" Width="160" Click="RegisterButton_Click" />
-                <TextBlock  Name="resultTextBox" HorizontalAlignment="Left" Height="52" Margin="83,333,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="234"/>
+                <Button Content="Register" Height="72" HorizontalAlignment="Center" Margin="118,287,122,0" Name="registerButton" VerticalAlignment="Top" Width="160" Click="RegisterButton_Click" />
+                <TextBlock  Name="resultTextBox" HorizontalAlignment="Left" Height="52" Margin="83,333,0,0" TextWrapping="Wrap"  VerticalAlignment="Bottom" Width="234" FontWeight="Bold" FontSize="18"/>
             </Grid>
         </ScrollViewer>
     </Grid>
