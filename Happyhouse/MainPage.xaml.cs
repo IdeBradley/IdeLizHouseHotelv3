@@ -44,5 +44,10 @@ namespace Happyhouse
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            resultTextBox.Text = "Thank you  for your request.   We will confirm your status by Email";
+        }
     }
 }
