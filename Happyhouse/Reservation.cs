@@ -10,6 +10,7 @@ namespace Happyhouse
 {
     class Reservation
     {
+        
         public string ReservationID { get; set; }
         public string PropertyID { get; set; }
         public string ClientID { get; set; }

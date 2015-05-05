@@ -27,7 +27,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="130,17,0,27.667">
             <TextBlock x:Name="PageTitle" Text="Happy Houses" Margin="9,-7,0.333,0" Height="55" FontSize="36" Foreground="Purple"  />
-            <Image HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="0" VerticalAlignment="Top" Source="happyhouse.png"/>
+         <!-- add happyhouses.png image here-->
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->

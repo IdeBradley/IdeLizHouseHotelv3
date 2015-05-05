@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.ApplicationInsights;
+using Microsoft.WindowsAzure.MobileServices;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -26,6 +27,15 @@ namespace Happyhouse
     /// </summary>
     public sealed partial class App : Application
     {
+        public static MobileServiceClient MobileService = new MobileServiceClient(
+          "http://localhost:50512");
+
+    // Use this constructor instead after publishing to the cloud
+    // public static MobileServiceClient MobileService = new MobileServiceClient(
+    //      "https://happyhousesmobileservice.azure-mobile.net/",
+    //      "seicAMNLoHYONvcRAkPmmlqbyJbtAi82"
+    //);
+
         /// <summary>
         /// Allows tracking page views, exceptions and other telemetry through the Microsoft Application Insights service.
         /// </summary>
